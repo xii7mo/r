@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Welcome Bro ${client.user.tag}!`);
 });
-const prefix = '_'
+const prefix = '-'
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
@@ -59,7 +59,7 @@ client.on('ready', () => {
 });
 client.on('ready', function(){
     var ms = 100000 ;
-    var setGame = [`_help `,`_inv`];
+    var setGame = [`-help `,`-inv`];
     var i = -1;
     var j = 0;
     setInterval(function (){
